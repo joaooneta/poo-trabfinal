@@ -19,7 +19,7 @@ Especificações Cobradas:
 
 3. Herança: A classes ItemLocadora é a superclasse de todos os produtos da aplicação(Filme e Jogo), contendo as informações e comportamentos semelhantes em um só lugar.
 
-4 e 5. Polimorfismo + Sobrecarga e Sobrescrita de Métodos: O método getDescricao é o método que utiliza tal pilar da POO, servindo como template na Superclasse ItemLocadora, mas sendo sobrescrito nas classes Filme e Jogo para melhor atingir seus potências desejados.
+4+5. Polimorfismo + Sobrecarga e Sobrescrita de Métodos: O método getDescricao é o método que utiliza tal pilar da POO, servindo como template na Superclasse ItemLocadora, mas sendo sobrescrito nas classes Filme e Jogo para melhor atingir seus potências desejados.
 
 6. Classes Abstratas e Interfaces: A classe abstrata ItemLocadora e a interface Loja atingem a especificação cobrada.
 
@@ -30,25 +30,29 @@ Especificações Cobradas:
 EXTRA. Exceções: Exceções implementadas no controle do input do usuário, evitando que a aplicação quebre quando o usuário insere Strings quando o pedido eram numeros.
 
 Classe ItemLocadora:
-Métodos getters e Setters,
-Método String getDescricao(): Retorna informação do produto em uma string
+
+- Métodos getters e Setters,
+- Método String getDescricao(): Retorna informação do produto em uma string
 
 Classe Filme:
-Métodos getters e Setters,
-Método String getDescricao(): Sobrescrito para retornar string adequada a um filme
+
+- Métodos getters e Setters,
+- Método String getDescricao(): Sobrescrito para retornar string adequada a um filme
 
 Classe Jogo:
-Métodos getters e Setters,
-Método String getDescricao(): Sobrescrito para retornar string adequada a um jogo
+
+- Métodos getters e Setters,
+- Método String getDescricao(): Sobrescrito para retornar string adequada a um jogo
 
 Classe Locadora:
-Método void init(): Adiciona alguns objetos as ArrayList's jogos e filmes, para facilitar a debugação
-Método void cadastrarFilme(): Faz a inserção de um novo object Filme a sua ArrayList
-Método void cadastrarJogo(): Faz a inserção de um novo object Jogo a sua ArrayList
-Método void exibirCatalogoFilmes(): Faz um loop pela ArrayList filmes exibindo a descrição de todos os filmes
-Método void exibirCatalogoJogos(): Faz um loop pela ArrayList jogos exibindo a descrição de todos os jogos
-Método void locar(): Seta o produto como locado e adiciona o resultado da transação ao caixa
-Método void devolver(): Seta o produto como devolvido, habilitando o produto no catalogo
-Método boolean filmeOuJogo(String tipoProduto): Função auxiliar, validando input do usuario
-Método boolean existeProduto(String tipoProduto, String titulo): Função auxiliar, impedindo inserção de jogos e filmes repetidos
-Método void exibeValorEmCaixa(): Printa valor em caixa em uma string formatada
+
+- Método void init(): Adiciona alguns objetos as ArrayList's jogos e filmes, para facilitar a debugação
+- Método void cadastrarFilme(): Faz a inserção de um novo object Filme a sua ArrayList
+- Método void cadastrarJogo(): Faz a inserção de um novo object Jogo a sua ArrayList
+- Método void exibirCatalogoFilmes(): Faz um loop pela ArrayList filmes exibindo a descrição de todos os filmes
+- Método void exibirCatalogoJogos(): Faz um loop pela ArrayList jogos exibindo a descrição de todos os jogos
+- Método void locar(): Seta o produto como locado e adiciona o resultado da transação ao caixa
+- Método void devolver(): Seta o produto como devolvido, habilitando o produto no catalogo
+- Método boolean filmeOuJogo(String tipoProduto): Função auxiliar, validando input do usuario
+- Método boolean existeProduto(String tipoProduto, String titulo): Função auxiliar, impedindo inserção de jogos e filmes repetidos
+- Método void exibeValorEmCaixa(): Printa valor em caixa em uma string formatada
